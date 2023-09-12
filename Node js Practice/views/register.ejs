@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            .flex{
+                display:grid;
+            }
+
+            input{
+                outline:none;
+                margin-top:10px;
+
+            }
+            
+            .form-wrapper{
+                width:40%;
+            }
+
+            .m-t{
+                margin-top:10px;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="form-wrapper">
+        <h2>Register to our Website</h2>
+        <form action="/" method="POST" class="flex" enctype="multipart/form-data">
+            <label >username</label>
+            <input name="username" type="text" >
+            <label>password</label>
+            <input name="password" type="password">
+
+            <label>confirm password</label>
+            <input name="cpassword" type="password" >
+
+            <label>age</label>
+            <input name="age" type="number" >
+
+            <label>email</label>
+            <input name="email" type="email" >
+
+            <label>file</label>
+            <input name="file" type="file"  multiple accept="image/jpeg">
+
+            <button type="submit" class="m-t">
+                submit
+            </button>
+
+           
+    
+        </form>
+    </div>
+ 
+</body>
+</html>
